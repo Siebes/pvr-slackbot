@@ -1,7 +1,7 @@
 "use strict";
 
 var Botkit = require('botkit'),
-    controller = Botkit.slackbot(),
+    controller = Botkit.slackbot({retry: Infinity}),
     SonarrFunctions = require('./sonarrFunctions'),
     CouchPotatoFunctions = require('./couchPotatoFunctions');
 
